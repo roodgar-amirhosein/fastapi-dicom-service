@@ -25,7 +25,6 @@ async def upload_dicom(
         try:
             contents = await document_file.read()
             ds = pydicom.dcmread(BytesIO(contents))
-            print(f"Processing {document_file.filename}: PatientID={ds.PatientID}, StudyInstanceUID={ds.StudyInstanceUID}, Modality={ds.Modality}")
             
             
             metadata = models.DicomMetadata(
