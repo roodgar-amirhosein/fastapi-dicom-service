@@ -1,6 +1,6 @@
-# DICOM Metadata API
+# FastAPI DICOM Service
 
-A FastAPI-based service for storing and retrieving DICOM file metadata.
+FastAPI service for storing and retrieving DICOM metadata.
 
 ## Features
 
@@ -17,20 +17,4 @@ A FastAPI-based service for storing and retrieving DICOM file metadata.
 - Alembic (migrations)
 - SQLite
 - pydicom
-
-## Installation
-
-```bash
-# Clone the repository
-git clone [your-repo-url]
-
-# Install dependencies
-poetry install
-
-# Run migrations
-alembic upgrade head
-
-# Start the server
-uvicorn main_app.main:app --reload
-```
 
